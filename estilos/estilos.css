@@ -19,41 +19,24 @@ a {
 
 .contenido {
     display: grid;
-    grid-template-areas:
-        "titulo titulo titulo"
-        "navegacion navegacion navegacion"
-        "imagen imagen imagen"
-        "nosotros nosotros nosotros"
-        "marcas marcas marcas"
-        "footer footer footer"
-    ;
-    grid-template-columns: repeat(3, 1.2fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 90px;
 }
 
 .titulo {
-    grid-area: titulo;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .navegacion {
-    grid-area: navegacion;
-}
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+} 
 
-.imagenIndex {
-    grid-area: imagen;
-}
-
-.texto {
-    grid-area: nosotros;
-}
-
-.marcas {
-    grid-area: marcas;
-}
-
-.footer {
-    grid-area: footer;
-}
 
 
 /* Menu y Navegacion */
@@ -108,6 +91,7 @@ a {
 
 .imagenIndex {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 
 }
@@ -117,6 +101,14 @@ a {
     height: 500px;
     border: antiquewhite solid 3px;
     border-radius: 10px;
+}
+
+.imagenIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0px;
+    padding: 10px;
 }
 
 
@@ -145,21 +137,30 @@ a {
 .logIba {
     width: 90px;
     height: 80px;
+    border: 4px solid black;
+    border-radius: 6px;
 }
+
 
 .logFend {
     width: 90px;
     height: 80px;
+    border: 4px solid black;
+    border-radius: 6px;
 }
 
 .logSuh {
     width: 90px;
     height: 80px;
+    border: 4px solid black;
+    border-radius: 6px;
 }
 
 .logRig {
     width: 90px;
     height: 80px;
+    border: 4px solid black;
+    border-radius: 6px;
 }
 
 
@@ -171,6 +172,9 @@ a {
     text-decoration: none;
     border-radius: 6px;
     border: 3px solid antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
 }
 
@@ -196,198 +200,65 @@ a {
     height: 40px;
 }
 
-@media screen and (max-width:500px) {
-    .contenido {
-        display: grid;
-        grid-template-areas:
-            "titulo"
-            "navegacion"
-            "imagen"
-            "nosotros"
-            "marcas"
-            "footer"
-        ;
-        grid-template-columns: 548px;
-        grid-template-rows: repeat(6, auto);
-    }
-    
+
+@media screen and (max-width:756px) {
     .titulo {
-        grid-area: titulo;
-    }
-    
-    .navegacion {
-        grid-area: navegacion;
-    }
-    
-    .imagenIndex {
-        grid-area: imagen;
-    }
-    
-    .texto {
-        grid-area: nosotros;
-    }
-    
-    .marcas {
-        grid-area: marcas;
-    }
-    
-    .footer {
-        grid-area: footer;
-    }
-
-    .titulo {
-        font-size: 17px;
-    }
-
-    .menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    
-    }
-    .menu li a {
-        font-size: 30px;
-    
-    
-    }
-    .ibanezRg img {
-        width: 500px;
-        height: 150px;
-
-    }
-    .ibanezRg p{
-        font-size: 15px solid;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: black;
-        text-align: center;
-    }
-    .espec {
-        font-size: 15px solid;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: black;
-        text-align: center;
-    }
-    .tabEspec {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .tabEspec th {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    
-    }
-    .charIb {
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        
-
-    }
-        
-        
-}
-
-@media screen and (max-width:756px){
-    .contenido {
-        display: grid;
-        grid-template-areas:
-            "titulo titulo"
-            "navegacion navegacion"
-            "imagen imagen"
-            "nosotros nosotros"
-            "marcas marcas"
-            "footer footer"
-        ;
-        grid-template-columns: 360px 360px;
-        grid-template-rows: repeat(6, auto);
-    }
-    
-    .titulo {
-        grid-area: titulo;
-    }
-    
-    .navegacion {
-        grid-area: navegacion;
-    }
-    
-    .imagenIndex {
-        grid-area: imagen;
-    }
-    
-    .texto {
-        grid-area: nosotros;
-    }
-    
-    .marcas {
-        grid-area: marcas;
-    }
-    
-    .footer {
-        grid-area: footer;
+        justify-content: space-evenly;
     }
 
-    .titulo {
-        font-size: 17px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    .menu li a {
-        font-size: 30px;
-    
-    
-    }
-    .ibanezRg img {
-        width: 500px;
-        height: 150px;
-
-    }
-    .ibanezRg h2 {
-        display: flex;
-    }
-    .ibanezRg p{
+    .imagenIndex img {
+        width: 520px;
+        height: 350px;
         display: flex;
         flex-direction: row;
-        font-size: 15px solid;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: black;
-        text-align: center;
-    }
-    .espec {
-        font-size: 15px solid;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: black;
-        text-align: center;
-    }
-    .tabEspec {
-        display: flex;
-        flex-direction: column;
+        justify-content: space-evenly;
         
+     
     }
-    .tabEspec th {
+    .navegacion {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    .charIb {
-        margin: 30px;
+    .navegacion .menu {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        
+       flex-direction: column;
+       align-items: center;
+       margin: 10px;
+       padding: 50px;
+    }
 
+
+    .ibanezFlex img {
+        max-width: 600px;
+        max-height: 220px;
     }
-        
-        
+    .ibanezFlex p {
+        text-align: center;
+    }
+
+
+   
 }
+
+@media screen and (max-width:500px){
+   .ibanezFlex img {
+       max-height: 150px;
+       max-width: 400px;
+    
+   }
+   .tabla {
+       max-width: 300px;
+       max-height: 200px;
+   }
+   .ibanezFlex p {
+       text-align: center;
+   }
+        
+        
+} 
 
 
 
@@ -430,116 +301,176 @@ a {
 
 
 /* IBANEZ */
+.ibanezFront {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+ .ibanezFlex {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
+ .ibanezFlex img {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     width: 1000px;
+     height: 310px;
+ }
 
 .ibanezRg h2 {
     font-size: 40px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
+    -webkit-text-stroke: black 2px;  
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    -webkit-text-stroke: black 2px;
-}
-
-.ibanezRg table {
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: antiquewhite;
-}
-
-.tabEspec {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-table {
-    background-color: #536976;
-}
-
-.tabEspec th {
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-
-}
-
-.tabEspec td {
-    font-size: 14px solid;
-    font-style: italic;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #14213D;
 }
 
 .ibanezRg p {
-    font-size: 17px;
+    font-size: 20px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 
 }
-
-.ibaTest h3 {
-    font-size: 18px;
+.ibaEsp h3 {
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #14213D;
-    padding: 15px;
+    color: black;
+    text-align: center; 
+}
+
+.ibaEsp p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
     text-align: center;
 }
 
-.ibaVid { 
+
+
+
+.testTexto h2 {
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    -webkit-text-stroke: black 2px;  
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
+.ibanezVid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 
 /* FENDER */
 
 .fenderAs {
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: antiquewhite;
+    color: black;
+    text-align: center;
 }
 
 .fenderAs h2 {
+    font-size: 40px;
     font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    -webkit-text-stroke: black 2px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fenderFront {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.fenderFront {
+.fenderFront img {
     width: 900px;
     height: 300px;
+
+}
+.fenderTest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 /* SUHR */
 
 .suhrStand {
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: antiquewhite;
+    color: black solid;
+    text-align: center;
 }
 
 .suhrStand h2 {
+    font-size: 40px;
     font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    -webkit-text-stroke: black 2px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .suhrFront {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.suhrFront img {
     width: 900px;
     height: 300px;
+
 }
+ .suhrTest {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
 
 /* RIGS */
 
 .rigBlack {
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: antiquewhite;
+    color: black solid;
+    text-align: center;
 }
 
 .rigBlack h2 {
+    font-size: 40px;
     font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    -webkit-text-stroke: black 2px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .blackFront {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.blackFront img {
     width: 600px;
     height: 500px;
 }
