@@ -74,6 +74,7 @@ a {
 .submenu {
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 .submenu li {
@@ -201,65 +202,6 @@ a {
 }
 
 
-@media screen and (max-width:756px) {
-    .titulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .imagenIndex img {
-        width: 520px;
-        height: 350px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-     
-    }
-    .navegacion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .navegacion .menu {
-        display: flex;
-       flex-direction: column;
-       align-items: center;
-       margin: 10px;
-       padding: 50px;
-    }
-
-
-    .ibanezFlex img {
-        max-width: 600px;
-        max-height: 220px;
-    }
-    .ibanezFlex p {
-        text-align: center;
-    }
-
-
-   
-}
-
-@media screen and (max-width:500px){
-   .ibanezFlex img {
-       max-height: 150px;
-       max-width: 400px;
-    
-   }
-   .tabla {
-       max-width: 300px;
-       max-height: 200px;
-   }
-   .ibanezFlex p {
-       text-align: center;
-   }
-        
-        
-} 
-
 
 
 
@@ -370,6 +312,16 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
 }
+.espec {
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    -webkit-text-stroke: black 2px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;     
+}
 
 
 /* FENDER */
@@ -474,3 +426,77 @@ a {
     width: 600px;
     height: 500px;
 }
+
+
+@media screen and (max-width:756px) {
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .imagenIndex img {
+        width: 440px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+     
+    }
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navegacion .menu {
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 10px;
+       padding: 50px;
+    }
+    .marcas ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+
+
+    .ibanezFlex img {
+        max-width: 600px;
+        max-height: 220px;
+    }
+    .ibanezFlex p {
+        text-align: center;
+    }
+
+
+   
+}
+
+@media screen and (max-width:500px){
+    .marcas ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+   .ibanezFlex img {
+       max-height: 150px;
+       max-width: 400px;
+    
+   }
+   .ibanezFlex p {
+       text-align: center;
+   }
+        
+        
+} 
+
+@media screen and (max-width:1200px){
+}
+
