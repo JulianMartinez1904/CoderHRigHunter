@@ -1,17 +1,22 @@
 /* INDEX */
 * {
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
 }
 
 html {
     font-size: 62, 5%;
-    background: #BBD2C5;
-    background: -webkit-linear-gradient(to bottom, #536976, #BBD2C5);
-    background: linear-gradient(to bottom, #536976, #BBD2C5);
-    background-size: cover;
+
 
 }
+
+.fondoBody {
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    
+}
+
 
 a {
     text-decoration: none;
@@ -24,7 +29,7 @@ a {
 }
 
 .titulo {
-    grid-row-start:1 ;
+    grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -35,53 +40,50 @@ a {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-} 
+}
+.contBoot {
+    /* position:fixed;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1000; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}   
+
+/* .imagenIndex {
+    margin: 100px;
+} */
 
 
 
 /* Menu y Navegacion */
 
-.menu {
-    background-color: #536976;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .titulo {
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    -webkit-text-stroke: #BBD2C5 1px;
-}
-
-.menu li {
-    display: inline-block;
-    position: relative;
-    padding: 0px 10px;
+    font-family: 'Kaushan Script', cursive;
+    
 }
 
 .menu li a {
-    text-decoration: none;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px 120px;
-    height: 30px;
-
+    
 }
 
 .submenu {
     display: none;
     position: absolute;
     z-index: 1;
+    
 }
 
 .submenu li {
     display: block;
-    background-color: dimgray;
     padding: 10px 0px;
-    border: solid wheat 3px;
+    border: solid wheat 1px;
+    
 }
 
 
@@ -90,41 +92,25 @@ a {
 
 }
 
-.imagenIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-.imagenIndex img {
-    width: 800px;
-    height: 500px;
-    border: antiquewhite solid 3px;
-    border-radius: 10px;
-}
-
-.imagenIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin:0px;
-    padding: 10px;
-}
-
-
-.textoMediano {
-    text-size-adjust: 15px;
-    color: antiquewhite;
-    font-style: italic;
-    -webkit-text-stroke: #14213D 2px;
+.textoNosotros h2 {
     text-align: center;
-    font-weight: bold;
     font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 6px;
-    border: 3px solid antiquewhite;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+
 }
+
+.textoNosotros {
+    text-size-adjust: 15px;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px;
+}
+
 
 
 .listaMarcas {
@@ -132,34 +118,46 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 60px;
 
 }
 
 .logIba {
-    width: 90px;
-    height: 80px;
+    width: 150px;
+    height: 140px;
     border: 4px solid black;
     border-radius: 6px;
 }
 
 
 .logFend {
-    width: 90px;
-    height: 80px;
+    width: 150px;
+    height: 140px;
     border: 4px solid black;
     border-radius: 6px;
+
+}
+.listaMarcas .btn-iba {
+transition: width 2s;
+transition: height 2s;
+}
+
+.listaMarcas img:hover {
+    /* transform: translate(-60px 30px); */
+    width: 200px;
+    height: 190px;
 }
 
 .logSuh {
-    width: 90px;
-    height: 80px;
+    width: 150px;
+    height: 140px;
     border: 4px solid black;
     border-radius: 6px;
 }
 
 .logRig {
-    width: 90px;
-    height: 80px;
+    width: 150px;
+    height: 140px;
     border: 4px solid black;
     border-radius: 6px;
 }
@@ -210,15 +208,23 @@ a {
 
 /* CONTACTO */
 
+.papiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .datos {
     background-color: dimgray;
     color: antiquewhite;
     font-size: 20px;
-    display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px 20px;
     border-radius: 6px;
     border: 3px solid antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 100px; */
 }
 
 .mensaje {
@@ -243,47 +249,51 @@ a {
 
 
 /* IBANEZ */
-.ibanezFront {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
- .ibanezFlex {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
- }
- .ibanezFlex img {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     width: 1000px;
-     height: 310px;
- }
+.ibanezFlex img {
+    box-shadow: 1px 10px 15px rgba(0,0,0,50);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ibanezFlex .imgib1 {
+    height: 470px;
+}
+.ibanezFlex .imgib2 {
+    height: 470px;
+}
+.ibanezFlex .imgib3 {
+    height: 470px;
+}
+/* .ibanezRg {
+    margin: 100px;
+} */
+
 
 .ibanezRg h2 {
     font-size: 40px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
-    -webkit-text-stroke: black 2px;  
+    -webkit-text-stroke: black 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .ibanezRg p {
-    font-size: 20px; 
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
+    margin: 30px;
 
 }
+
 .ibaEsp h3 {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    text-align: center; 
+    text-align: center;
 }
 
 .ibaEsp p {
@@ -297,11 +307,11 @@ a {
 
 
 .testTexto h2 {
-    font-size: 40px;
+    font-size: 25px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
-    -webkit-text-stroke: black 2px;  
+    -webkit-text-stroke: black 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -312,25 +322,30 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .espec {
     font-size: 40px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
-    -webkit-text-stroke: black 2px;  
+    -webkit-text-stroke: black 2px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;     
+    justify-content: space-evenly;
 }
 
 
 /* FENDER */
 
 .fenderAs {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     text-align: center;
+    /* margin: 100px; */
+}
+.imgFend {
+    box-shadow: 1px 10px 15px rgba(0,0,0,50)
 }
 
 .fenderAs h2 {
@@ -338,22 +353,28 @@ a {
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
-    -webkit-text-stroke: black 2px;  
+    -webkit-text-stroke: black 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.fenderFront {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.fenderAs h3 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+}
+.fenderAs p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    margin:30px;
+
 }
 
-.fenderFront img {
-    width: 900px;
-    height: 300px;
 
-}
+
 .fenderTest {
     display: flex;
     flex-direction: row;
@@ -361,23 +382,50 @@ a {
 }
 
 /* SUHR */
+.imgSuhr {
+    border-radius: 6px;
+    box-shadow: 1px 10px 15px rgba(0,0,0,50);
+}
+.imgSuhr img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.imgSuhr .suhrImg3 {
+    height: 470px;
+}
+.imgSuhr .suhrImg4 {
+    height: 470px;
+}
+/* .suhrStand {
+    margin: 100px;
+} */
 
-.suhrStand {
+.suhrStand p {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black solid;
+    color: black;
     text-align: center;
+    margin:30px;
 }
+
 
 .suhrStand h2 {
     font-size: 40px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
-    -webkit-text-stroke: black 2px;  
+    -webkit-text-stroke: black 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
+}
+.suhrStand h3 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
 }
 
 .suhrFront {
@@ -391,112 +439,135 @@ a {
     height: 300px;
 
 }
- .suhrTest {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
- }
+
+.suhrTest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 /* RIGS */
-
 .rigBlack {
-    font-size: 20px;
+
+    box-shadow: 1px 10px 15px rgba(0,0,0,50);
+}
+.rigBlack img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.rigBlack .imgBlack1 {
+    height: 470px;
+}
+.rigBlack .imgBlack2 {
+    height: 470px;
+}
+.rigBlack .imgBlack3 {
+    height: 470px;
+}
+/* .rigInd {
+    margin: 100px;
+} */
+
+
+.rigInd p {
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black solid;
     text-align: center;
+    margin: 30px;
+    
 }
 
-.rigBlack h2 {
+.rigInd h2 {
     font-size: 40px;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
-    -webkit-text-stroke: black 2px;  
+    -webkit-text-stroke: black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.blacksTest {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.blackFront {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.blackFront img {
-    width: 600px;
-    height: 500px;
-}
 
 
-@media screen and (max-width:756px) {
-    .titulo {
+
+@media screen and (max-width:320px) {
+    /* INDEX */
+    .contBoot {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        align-self: center;
     }
-
-    .imagenIndex img {
-        width: 440px;
-        height: 300px;
+    .imagenIndex {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
+        flex-direction: column;
+        align-self: flex-start;
+        box-sizing: border-box;
+        margin: 0px;
      
     }
-    .navegacion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+    .textoNosotros {
+        font-size: 20px;
     }
-    .navegacion .menu {
-        display: flex;
-       flex-direction: column;
-       align-items: center;
-       margin: 10px;
-       padding: 50px;
-    }
+    
     .marcas ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    
+
+    }
+    /* IBANEZ */
+    .ibanezFlex {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .ibanezRg img {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+    .ibanezRg p {
+        font-size: 20px;
     }
 
+
+
+
+
+}
+
+@media screen and (max-width:500px) {
+    /* .marcas ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
 
     .ibanezFlex img {
-        max-width: 600px;
-        max-height: 220px;
+        max-height: 150px;
+        max-width: 400px;
+
     }
+
     .ibanezFlex p {
         text-align: center;
-    }
+    } */
 
 
-   
 }
 
-@media screen and (max-width:500px){
-    .marcas ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    
-    }
-   .ibanezFlex img {
-       max-height: 150px;
-       max-width: 400px;
-    
-   }
-   .ibanezFlex p {
-       text-align: center;
-   }
-        
-        
-} 
-
-@media screen and (max-width:1200px){
-}
-
+@media screen and (max-width:1200px) {}

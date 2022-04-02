@@ -6,78 +6,132 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> RH Suhr</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../estilos/estilos.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
 </head>
 
-<body>
-  <div class="contenido">
-    <header class="titulo">
-      <h1 class="animate__animated animate__heartBeat">Suhr</h1>
-    </header>
-    <nav class="navegacion">
-      <ul class="menu">
-        <li><a href="../index.html">
-            Inicio
-          </a></li>
-        <li><a href="contacto.html">
-            Contacto
-          </a></li>
-        <li><a href="#">Marcas</a>
-          <ul class="submenu">
-            <li><a href="ibanez.html">
-                Ibanez
-              </a></li>
-            <li><a href="fender.html">
-                Fender
-              </a></li>
-            <li><a href="suhr.html">
-                Suhr
-              </a></li>
-            <li><a href="rigs.html">
-                Rigs
-              </a></li>
+<body class="fondoBody">
+  <div class="container-fluid contBoot">
+    <div class="row col-12 navInd">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand animate__animated animate__heartBeat titulo">Suhr</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav menu">
+            <li class="nav-item inicio">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item contacto">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle marcas" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Marcas
+              </a>
+              <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="ibanez.html">Ibanez</a></li>
+                <li><a class="dropdown-item" href="fender.html">Fender</a></li>
+                <li><a class="dropdown-item" href="suhr.html">Suhr</a></li>
+                <li><a class="dropdown-item" href="rigs.html">Rigs</a></li>
+              </ul>
+            </li>
           </ul>
-    </nav>
+        </div>
+      </nav>
+    </div>
   </div>
   <main>
-    <section>
-      <article class="suhrStand">
-        <h2 class="animate__animated animate__headShake">Suhr Standard Legacy</h2>
-        <div class="suhrFront">
-          <img src="https://media.suhr.com/wp-content/uploads/2021/07/13162711/Front_Image_Standard.jpg">
+    <section class="conteiner-fluid">
+      <div class="row">
+        <div class="col-12">
+          <article class="suhrStand">
+            <h2 class="animate__animated animate__headShake">Suhr Standard Legacy</h2>
+            <div id="carouselExampleIndicators" class="carousel slide imgSuhr" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://media.suhr.com/wp-content/uploads/2021/07/13162711/Front_Image_Standard.jpg"
+                    class="d-block w-100 suhrImg1" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://medias.audiofanzine.com/images/normal/suhr-standard-legacy-limited-edition-3718815.png"
+                    class="d-block w-100 suhrImg2" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://media.suhr.com/wp-content/uploads/2021/07/13162704/StandardLegacyFeature4.jpg"
+                    class="d-block w-100 suhrImg3" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://peachguitars.2dimg.com/106/4o0a1910_b359cacfd6.jpg" class="d-block w-100 suhrImg4"
+                    alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p>Basada en una guitarra legendaria, la primera guitarra diseñada y construida por John Suhr para él mismo
+              en
+              1984. La Suhr Standard Legacy 2021/2022 comienza con un cuerpo standard de Okoume africano, tapa de arce
+              con
+              figurado y binding, un mástil de arce, diapasón de palisandro indio, con pala acabada en negro brillante,
+              pastillas EMG SA en el mástil y central, una EMG 81 en el puente y herrajes dorados. La nueva edición
+              limitada
+              Standard Legacy 2021/2022 está disponible en cinco acabados: Trans Carmel, Honey Burst, Black y los nuevos
+              Pelham Blue y Aged Cherry Burst.
+            </p>
+            <h2>Especificaciones</h2>
+            <h3>MASTIL:</h3>
+            <p>Mástil de arce con diapasón de palisandro indio.
+              Acabado satinado.</p>
+            <h3>TRASTES:</h3>
+            <p>Acero inoxidable
+              Radio compuesto de 10"-14"</p>
+            <h3>PUENTE:</h3>
+            <p>Puente EMG 85 (Marfil o Negro).
+              EMG SA mid y neck (Ivory o Black).</p>
+            <h3>OPCIONES DE PUENTE:</h3>
+            <p>Gotoh 510 - 2 postes, monturas sólidas, bloque de acero
+              Floyd Rose original, empotrado (dorado)</p>
+            <h2>Suhr Test</h2>
+            <div class="suhrTest"><iframe width="560" height="315" src="https://www.youtube.com/embed/YwKSNLeaiR4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </article>
         </div>
-        <p>Basada en una guitarra legendaria, la primera guitarra diseñada y construida por John Suhr para él mismo en
-          1984. La Suhr Standard Legacy 2021/2022 comienza con un cuerpo standard de Okoume africano, tapa de arce con
-          figurado y binding, un mástil de arce, diapasón de palisandro indio, con pala acabada en negro brillante,
-          pastillas EMG SA en el mástil y central, una EMG 81 en el puente y herrajes dorados. La nueva edición limitada
-          Standard Legacy 2021/2022 está disponible en cinco acabados: Trans Carmel, Honey Burst, Black y los nuevos
-          Pelham Blue y Aged Cherry Burst.
-        </p>
-        <h2>Especificaciones</h2>
-        <h3>MASTIL:</h3>
-        <p>Mástil de arce con diapasón de palisandro indio.
-          Acabado satinado.</p>
-        <h3>TRASTES:</h3>
-        <p>Acero inoxidable
-          Radio compuesto de 10"-14"</p>
-        <h3>PUENTE:</h3>
-        <p>Puente EMG 85 (Marfil o Negro).
-          EMG SA mid y neck (Ivory o Black).</p>
-        <h3>OPCIONES DE PUENTE:</h3>
-        <p>Gotoh 510 - 2 postes, monturas sólidas, bloque de acero
-          Floyd Rose original, empotrado (dorado)</p>
-        <h2>Suhr Test</h2>
-        <div class="suhrTest"
-        ><iframe width="560" height="315" src="https://www.youtube.com/embed/YwKSNLeaiR4"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </article>
+      </div>
     </section>
   </main>
   <div>
@@ -94,6 +148,12 @@
       </div>
   </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
 
 </body>
 
