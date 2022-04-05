@@ -549,7 +549,7 @@ transition: height 2s;
 }
 
 @media screen and (max-width:500px) {
-    /* .marcas ul {
+    .marcas ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -565,8 +565,7 @@ transition: height 2s;
 
     .ibanezFlex p {
         text-align: center;
-    } */
-
+    }
 
 }
 
