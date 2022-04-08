@@ -1,0 +1,71 @@
+@media screen and (max-width:320px) {
+    /* INDEX */
+    .contBoot {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .imagenIndex {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        box-sizing: border-box;
+        margin: 0px;
+     
+    }
+    .textoNosotros {
+        font-size: 20px;
+    }
+    
+    .marcas ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    /* IBANEZ */
+    .ibanezFlex {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .ibanezRg img {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+    .ibanezRg p {
+        font-size: 20px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width:500px) {
+    .marcas ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .ibanezFlex img {
+        max-height: 150px;
+        max-width: 400px;
+
+    }
+
+    .ibanezFlex p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:1200px) {}

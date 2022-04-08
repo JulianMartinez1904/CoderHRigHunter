@@ -1,0 +1,41 @@
+/* CONTACTO */
+
+.datos {
+    background-color: dimgray;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+    border: 3px solid antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.papiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .mensaje {
+        color: antiquewhite;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+    }
+    
+    .formulario {
+        display: inline-block;
+        color: antiquewhite;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: dimgray;
+        border-radius: 6px;
+        border: 3px solid antiquewhite;
+        text-align: start;
+    }
+
+
+
+
+}

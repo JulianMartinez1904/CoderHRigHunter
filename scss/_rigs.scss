@@ -1,0 +1,55 @@
+/* RIGS */
+.rigInd {
+    h2 {
+        font-size: 40px;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        -webkit-text-stroke: black 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 30px;
+    }
+    .rigBlack {
+
+        box-shadow: 1px 10px 15px rgba(0,0,0,50);
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .imgBlack1 {
+        height: 470px;
+    }
+    .imgBlack2 {
+        height: 470px;
+    }
+    .imgBlack3 {
+        height: 470px;
+    }
+    }
+    p {
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black solid;
+        text-align: center;
+        margin: 30px;
+        
+    }
+    
+    
+    .blacksTest {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+
+
+
+
+
+}

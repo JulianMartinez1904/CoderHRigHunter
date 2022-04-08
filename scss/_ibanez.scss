@@ -1,0 +1,93 @@
+/* IBANEZ */
+
+.ibanezFlex {
+    img {
+    box-shadow: 1px 10px 15px rgba(0,0,0,50);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+
+    .imgib1 {
+    height: 470px;
+    }
+    .imgib2 {
+    height: 470px;
+    }
+    .imgib3 {
+    height: 470px;
+    }
+}
+
+.ibanezRg {
+    h2 {
+        font-size: 40px;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        -webkit-text-stroke: black 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    p {
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        margin: 30px;
+    
+    }
+}
+
+.ibaEsp {
+    .espec {
+        font-size: 40px;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        -webkit-text-stroke: black 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+     h3 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    }
+
+    p {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    }
+    
+}
+
+
+
+
+.testTexto {
+    h2 {
+        font-size: 25px;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        -webkit-text-stroke: black 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+.ibanezVid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+

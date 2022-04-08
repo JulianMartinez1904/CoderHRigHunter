@@ -1,0 +1,71 @@
+/* SUHR */
+.suhrStand {
+    h2 {
+        font-size: 40px;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        -webkit-text-stroke: black 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .imgSuhr {
+        border-radius: 6px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,50);
+    
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .suhrImg3 {
+            height: 470px;
+        }
+        .suhrImg4 {
+            height: 470px;
+        }
+    }
+
+    p {
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        text-align: center;
+        margin:30px;
+    }
+    
+    
+    
+    h3 {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        text-align: center;
+    }
+    
+    .suhrFront {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    img {
+        width: 900px;
+        height: 300px;
+    
+    }
+    }
+    
+    .suhrTest {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+
+
+
+
+
+
+}
