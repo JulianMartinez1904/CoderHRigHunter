@@ -1,15 +1,7 @@
 /* SUHR */
 .suhrStand {
     h2 {
-        font-size: 40px;
-        font-style: italic;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: antiquewhite;
-        -webkit-text-stroke: black 2px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
+       @extend .headPg;
     }
     .imgSuhr {
         border-radius: 6px;
@@ -57,9 +49,7 @@
     }
     
     .suhrTest {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include vidHead (flex,row,space-evenly);
     }
     
 

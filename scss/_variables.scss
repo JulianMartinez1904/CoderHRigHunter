@@ -1,0 +1,42 @@
+// EXTEND
+.headPg {
+    font-size: 40px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    -webkit-text-stroke: black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+// Modificacion de los h2 encabezados de paginas, 
+// se hizo la clase .headPg para anidar las mismas 
+// caracteristicas
+
+// MAP-GET
+// Estilos de parrafos de descripcion
+$estilos:(
+    tFuente:25px,
+    color:black,
+    postext:center,
+    medida:30px
+    );
+
+// MIXINS
+// Este mixin se va a utilizar en los videos
+// de cada pagina para ajustar su posicion
+
+@mixin vidHead ($flex,$direc,$justif){
+    display:$flex;
+    flex-direction: $direc;
+    justify-content: $justif;
+}
+
+// Preferiria mas el mixin sin parametros
+// pero ejemplifique con este que por ahi es un poco
+// mas rebuscado y el extend tambien me gusto, obviamente
+// cada proyecto y uso es especifico
+
+
+

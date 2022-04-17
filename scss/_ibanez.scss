@@ -23,7 +23,7 @@
     h2 {
         font-size: 40px;
         font-style: italic;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: antiquewhite;
         -webkit-text-stroke: black 2px;
         display: flex;
@@ -35,7 +35,7 @@
         font-size: 25px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: black;
-        margin: 30px;
+        margin:30px;
     
     }
 }
@@ -60,9 +60,9 @@
     }
 
     p {
-    font-size: 25px;
+    font-size:25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color:map-get($estilos, color);
     text-align: center;
     }
     
@@ -86,8 +86,6 @@
 }
 
 .ibanezVid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include vidHead (flex,row,space-evenly);
 }
 

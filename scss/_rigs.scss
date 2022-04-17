@@ -1,14 +1,7 @@
 /* RIGS */
 .rigInd {
     h2 {
-        font-size: 40px;
-        font-style: italic;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: antiquewhite;
-        -webkit-text-stroke: black 2px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @extend .headPg;
         margin: 30px;
     }
     .rigBlack {
@@ -34,16 +27,14 @@
         font-size: 25px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: black solid;
-        text-align: center;
+        text-align: map-get($estilos, postext);
         margin: 30px;
         
     }
     
     
     .blacksTest {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include vidHead (flex,row,space-evenly);
     }
 
 
